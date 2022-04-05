@@ -20,7 +20,6 @@ print(type(["apple", "banana", "cherry"]))
 print(type(1+9j))
 
 #Tuples:array that their value can't be changed in runtime
-
 tup = ()# defining an empty Tuple
 tup = (1,1+1j,"hi")
 print(tup[2])
@@ -36,6 +35,15 @@ lst.remove('c') #removes first element of given value
 print(lst)
 lst.pop() # removes and returns the last element by defaule , can also take an index
 lst = sorted(lst) # also reversed for reverse ordering
+
+#Dictionaries : it's an array-like structure where elemtents are indexed by a key
+dict = {'key0':'value0',3:'val'}
+dict2 = {3:"d"}
+print(dict["key0"]) # dict.get("key") is better as it doesn't break the code
+dict["newKey"] = 'new value'
+dict.keys()#retruns all keys names
+dict.values()#returns all values
+dict.update(dict2) # adds a dictionary to another one
 
 #---String---
 Firstname = "Seif"
